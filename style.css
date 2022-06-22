@@ -132,3 +132,39 @@ body
 .navigation ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(70px * 4));
 }
+@media (max-width:786px){
+    .indicator{
+        position: absolute;
+        top: 42%;
+        width: 70px;
+        height: 70px;
+        background: #29fd53;
+        border: 6px solid var(--clr);
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    .indicator::before
+{
+    content: '';
+    position: absolute;
+    top: 56%;
+    left: -19px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 23px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+.indicator::after
+{
+    content: '';
+    position: absolute;
+    top: 56%;
+    right: -19px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 23px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+}
