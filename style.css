@@ -135,7 +135,7 @@ body
 @media (max-width:360px){
     .indicator{
         position: absolute;
-        top: 40%;
+        top: 42%;
         width: 70px;
         height: 70px;
         background: #29fd53;
